@@ -1,2 +1,4 @@
 * filter=glcrypt diff=glcrypt
 .git* !filter !diff
+opencode.json !filter !diff
+AGENTS.md !filter !diff
