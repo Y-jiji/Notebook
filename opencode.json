@@ -1,13 +1,22 @@
 {
     "$schema": "https://opencode.ai/config.json",
     "permissions": {
+        "*": "ask",
+        "bash": "ask",
+        "edit": {
+            "*":            "deny",
+            "llm/*.typ":    "allow"
+        },
         "read": {
-        "tree/*":         "deny",
-        "identity/*":     "deny",
-        "seq/*":          "deny",
-        "llm/*.typ":      "allow",
-        "paper/*.pdf":    "allow",
-        "book/*.pdf":     "allow"
+            "*":                "deny",
+            "llm/*.typ":        "allow",
+            "paper/*.pdf":      "allow",
+            "book/*.pdf":       "allow",
+            "template/*.typ":   "allow"
+        },
+        "write": {
+            "*":            "deny",
+            "llm/*.typ":    "allow"
         }
     }
 }
